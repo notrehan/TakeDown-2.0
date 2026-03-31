@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- LEFT PANEL -->
+    <div class="score-card">
+
+    <h3>Security Score</h3>
+
+    <div class="pie-chart">
+        <div class="pie-center">
+            <span id="scoreText">At Risk</span>
+        </div>
+    </div>
+
+    <div class="score-details">
+        <div><span class="dot high"></span> High: <strong>2</strong></div>
+        <div><span class="dot medium"></span> Medium: <strong>1</strong></div>
+        <div><span class="dot low"></span> Low: <strong>0</strong></div>
+    </div>
+
+</div>
+
+    <!-- RIGHT PANEL -->
+    <div class="main">
+
+        <h2>Website Health</h2>
+
+        <div class="health-cards">
+            <div class="card">API Security</div>
+            <div class="card">Auth</div>
+            <div class="card">Input Validation</div>
+        </div>
+
+        <h2>My Vulnerabilities</h2>
+
+        <div id="vulnList"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+runScan(); // temp
+</script>
+
+</body>
+</html>
